@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.showpattern">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CharacterLogic5"></activity>
+        <activity android:name=".CharacterPattern5" />
+        <activity android:name=".CharacterLogic4" />
+        <activity android:name=".CharacterPattern4" />
+        <activity android:name=".characterLogic3" />
+        <activity android:name=".CharacterPattern3" />
+        <activity android:name=".CharacterLogic2" />
+        <activity android:name=".CharacterPattern2" />
+        <activity android:name=".CharacterLogic1" />
+        <activity android:name=".CharacterPattern1" />
+        <activity android:name=".CharacterPatternMenu" />
+        <activity android:name=".NumericLogic10" />
+        <activity android:name=".NumericPattern10" />
+        <activity android:name=".NumericLogic9" />
+        <activity android:name=".NumericPattern9" />
+        <activity android:name=".NumericLogic8" />
+        <activity android:name=".NumericPattern8" />
+        <activity android:name=".NumericLogic7" />
+        <activity android:name=".NumericPattern7" />
+        <activity android:name=".NumericLogic6" />
+        <activity android:name=".NumericPattern6" />
+        <activity android:name=".NumericLogic5" />
+        <activity android:name=".NumericPattern5" />
+        <activity android:name=".NumericLogic4" />
+        <activity android:name=".NumericPattern4" />
+        <activity android:name=".NumericLogic3" />
+        <activity android:name=".NumericPattern3" />
+        <activity android:name=".NumericLogic2" />
+        <activity android:name=".NumericPattern2" />
+        <activity android:name=".NumericLogic1" />
+        <activity android:name=".NumericPattern1" />
+        <activity android:name=".NumericPatternMenu" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".ShowLogic12" />
+        <activity android:name=".PatternTwelve" />
+        <activity android:name=".ShowLogic11" />
+        <activity android:name=".PatternEleven" />
+        <activity android:name=".ShowLogic10" />
+        <activity android:name=".PatternTen" />
+        <activity android:name=".ShowLogic9" />
+        <activity android:name=".PatternNine" />
+        <activity android:name=".ShowLogic8" />
+        <activity android:name=".PatternEight" />
+        <activity android:name=".ShowLogic7" />
+        <activity android:name=".PatternSeven" />
+        <activity android:name=".ShowLogic6" />
+        <activity android:name=".PatternSix" />
+        <activity android:name=".ShowLogic5" />
+        <activity android:name=".PatternFive" />
+        <activity android:name=".ShowLogic4" />
+        <activity android:name=".PatternFour" />
+        <activity android:name=".ShowLogic3" />
+        <activity android:name=".PatternThree" />
+        <activity android:name=".ShowLogic2" />
+        <activity android:name=".PatternTwo" />
+        <activity android:name=".ShowLogic1" />
+        <activity android:name=".patternOne" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

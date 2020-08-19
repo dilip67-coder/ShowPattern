@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharacterPatternMenu"
+    android:background="@color/olivedrab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gainsboro"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Available Pattern"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+        >
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Right ALPHABET triangle"
+
+            android:id="@+id/Cbtn1"
+
+            android:textSize="15dp"
+
+            />
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horizontal Alphabet Triangle"
+            android:id="@+id/Cbtn2"
+
+            android:textSize="15dp"/>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="K Shape Character"
+            android:id="@+id/Cbtn3"
+
+            android:textSize="15dp"/>
+
+
+        <Button
+
+            android:id="@+id/Cbtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Right Angle Character Triangle"
+            android:textSize="15dp" />
+
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Character Diamond"
+
+            android:id="@+id/Cbtn5"
+
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

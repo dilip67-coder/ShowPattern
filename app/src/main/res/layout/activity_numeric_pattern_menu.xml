@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumericPatternMenu"
+    android:background="@color/olivedrab">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gainsboro"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Available Pattern"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="623dp"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+
+            <Button
+                android:id="@+id/Nbtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+
+                android:text="Simple Numeric Triangle"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/Nbtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Serial Numeric Triangle"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/Nbtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Pascal's Triangle"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/Nbtn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Filled Diamond Numeric"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/Nbtn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:text="Horizontal Numeric Triangle"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/Nbtn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Descending order Triangle"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/Nbtn7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Numeric Right Triangle"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/Nbtn8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Binary Number"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/Nbtn9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:text="Zero/One's Triangle"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/Nbtn10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Double Numeric Diamond"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

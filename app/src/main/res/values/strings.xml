@@ -1,0 +1,801 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Show Pattern</string>
+    <string name="pyramid">
+    \n *
+   \n *  *
+  \n *  *  *
+ \n *  *  *  *
+ \n*  *  *  *  *</string>
+    <string name="pyramidlogic"> \nfor (int i=0; i(LessThan)5; i++)
+            \n{
+             \n   print(" ");
+            \n}
+            \nfor (int j=0; j(LessThanEqualTo)i; j++ )
+            \n{
+             \n   print("* ");
+            \n}
+
+           \n print(NewLine);
+       \n }
+   \n }  </string>
+    <string name="ReversedPyramid">
+        \n* * * * *
+  \n* * * *
+   \n* * *
+    \n* *
+    \n * </string>
+    <string name="LogicreversedPyramid">\n for (int i= 0; i(LessthanEqualTo) rows-1 ; i++)
+   \n{
+       \n for (int j=0; j(LesThanEqualTo)i; j++)
+       \n {
+        \n   print(" ");
+        \n}
+        \nfor (int k=0; k(LessThanEqualTo)rows-1-i; k++)
+        \n{
+        \n    print("*" + " ");
+        \n}
+       \nprint(NewLine);
+    \n}
+    </string>
+    <string name="RightTriangleStarPattern">
+        \n*
+\n* *
+\n* * *
+\n* * * *
+\n* * * * *
+    </string>
+
+    <string name="RightTriangleStarPatternLogic" tools:ignore="TypographyDashes">
+        for(i=0; i(LessThan) 5; i++)
+        \n//outer loop for number of rows(n)
+        \n{
+        \nfor(j=2*(5 -i); j>=0; j--)
+        \n// inner loop for spaces
+           \n {
+            \n    Print(" Space"); // printing space
+           \n }
+           \n for(j=0; j(LessThan)= i; j++)
+        \n//  inner loop for columns
+          \n  {
+           \n     Print("* "); // print star
+           \n }
+           \n Print(NewLine);
+        \n// ending line after each row
+       \n }
+
+        </string>
+    <string name="LeftTriangleStarPattern">\n  *
+        \n* *
+       \n* * *
+     \n* * * *
+   \n* * * * *
+    </string>
+    <string name="LeftTriangleStarPatternLogic" tools:ignore="TypographyDashes"><![CDATA[
+         //outer loop for number of rows(n)
+         \nfor(i=0; i< 5; i++)
+         \n{
+         \n// inner loop for spaces
+        \n  for(j=2*(5-i); j>=0; j--)
+          \n  {
+          \n      Print(" "); // printing space
+          \n  }
+          \n  for(j=0; j<=i; j++) //  inner loop for columns
+           \n {
+           \n     Print("* "); // print star
+          \n  }
+          \n  Print(NewLine); // ending line after each row
+      \n  }
+    ]]></string>
+    <string name="DiamondShapePattern">
+           \n *
+  \n ***
+  \n*****
+ \n*******
+\n*********
+ \n*******
+ \n *****
+  \n ***
+   \n *
+
+    </string>
+    <string name="DiamondShapePatternLogic">space = n - 1;
+\nfor (j = 1; j(LessThan)= n; j++)
+\n{
+\nfor (i = 1; i(LessThan)= space; i++)
+\n{
+\nPrint(" ");
+\n}
+\nspace—;
+\nfor (i = 1; i(LessThan)= 2 * j - 1; i++)
+\n{
+\nPrint("*");
+\n}
+\nPrint(NewLine)("");
+\n}
+\nspace = 1;
+\nfor (j = 1; j(LessThan)= n - 1; j++)
+\n{
+\nfor (i = 1; i(LessThan)= space; i++)
+\n{
+\nPrint(" ");
+\n}
+\nspace++;
+\nfor (i = 1; i(LessThan)= 2 * (n - j) - 1; i++)
+\n{
+\nPrint("*");
+\n}
+\nPrint(NewLine)("");
+\n}
+\n}
+\n}
+        \n
+        \n
+
+    </string>
+    <string name="DownwardTriangleStarPattern">
+       \n* * * * *
+\n* * * *
+\n* * *
+\n* *
+\n*
+    </string>
+    <string name="DownwardTriangleStarPatternLogic">
+        \nfor (int i= 5-1; i(GreaterThan)=0 ; i—)
+    \n{
+    \nfor (int j=0; j(LessThan)=i; j++)
+    \n{
+    \nPrint("* ");
+   \n }
+    \nPrint(NewLine);
+    \n}
+    </string>
+    <string name="MirroredRightTriangleStarPattern">
+       \n *
+   \n * *
+  \n * * *
+  \n* * * *
+ \n* * * * *
+\n* * * * * *
+
+    </string>
+    <string name="MirroredRightTriangleStarPatternLogic">
+        \n for (int i= 0; i(LessThan)= 6; i++)
+       \n {
+         \n   for (int j=1; j(LessThan)= 6-i; j++)
+          \n  {
+          \n      Print(" Space");
+           \n }
+           \n for (int k=0;k(LessThan)=i;k++)
+           \n {
+          \n      Print("*");
+           \n } 
+           \n     Print(NewLine);
+      \n  }
+
+    </string>
+    <string name="RightdownMirrorStarPattern">\n* * * * *\n* * * *\n* * *\n* *\n*
+    </string>
+    <string name="RightdownMirrorStarPatternLogic" tools:ignore="TypographyDashes">
+        for (int i= rows; i(GreaterThan)= 1; i--)
+    \n{
+    \nfor (int j=rows; j(GreaterThan)i;j--)
+    \n{
+    \nPrint(" ");
+    \n}
+    \nfor (int k=1;k(LessThan)=i;k++)
+   \n {
+    \nPrint("*");
+    \n}
+    \nPrint(NewLine);
+    \n}
+    </string>
+    <string name="RightPascalsTriangle">
+        \n* 
+\n* * 
+\n* * * 
+\n* * * * 
+\n* * * * * 
+\n* * * * 
+\n* * * 
+\n* * 
+\n* 
+
+    </string>
+    <string name="RightPascalsTriangleLogic" tools:ignore="TypographyDashes">
+        \nfor (int i= 0; i(LessThan)= 5-1 ; i++)
+        \n{
+         \n   for (int j=0; j(LessThan)=i; j++)
+        \n{
+        \nPrint("* ");
+        \n}
+        \nPrint(NewLine);
+        \n}
+        \nfor (int i= 5-1; i(GreaterThan)=0; i--)
+       \n {
+         \n   for(int j=0; j(LessThan)= i-1;j++)
+         \n   {
+          \n      Print("* ");
+         \n   }
+          \n  Print(NewLine);
+       \n }
+
+    </string>
+    <string name="LeftPascalsTriangle">\n*\n* *\n * * *\n* * * *\n* * * * *\n* * * *\n* * *\n* *\n*
+    </string>
+    <string name="LeftPascalsTriangleLogic" tools:ignore="TypographyDashes">
+                   for (int i= 1; i(LessThan)= 5 ; i++)
+        \n{
+       \n     for (int j=i; j (LessThan)5 ;j++)
+       \n {
+        \n        Print(" Space");
+        \n    }
+        \n    for (int k=1; k(LessThan)=i;k++)
+       \n {
+       \n Print("*");
+       \n }
+       \n Print("NewLine");
+       \n }
+      \n  for (int i=5; i(GreaterThan)=1; i--)
+       \n {
+       \n     for(int j=i; j(LessThan)=5;j++)
+       \n     {
+        \n        Print(" ");
+        \n    }
+        \n    for(int k=1; k(LessThan)i ;k++)
+        \n    {
+         \n       Print("*");
+        \n    }
+         \n   Print("NewLine");
+       \n }
+
+    </string>
+    <string name="SandglassStarPattern">
+        * * * * * 
+ \n* * * * 
+  \n* * * 
+   \n* * 
+    \n* 
+    \n* 
+   \n* * 
+  \n* * * 
+ \n* * * * 
+\n* * * * * 
+
+    </string>
+    <string name="SandglassStarPatternLogic" tools:ignore="TypographyDashes">
+        for (int i= 0; i(LessThan)= 5-1 ; i++)
+     \n    {
+        \n     for (int j=0; j(LessThan)i; j++)
+           \n  {
+              \n   Print(" Space");
+            \n }
+             \nfor (int k=i; k(LessThan)= 5-1; k++)
+         \n{
+         \nPrint("* ");
+        \n }
+         \nPrint(NewLine);
+         \nfor (int i= 5-1; i(GreaterThan)= 0; i--)
+         \n{
+            \n for (int j=0; j(LessThan)i ;j++)
+             \n{
+               \n  Print("Space ");
+             \n}
+             \nfor (int k=i; k(LessThan)= 5-1; k++)
+             \n{
+               \n  Print("* "+ Space);
+            \n }
+            \n Print(NewLine);
+        \n }
+    </string>
+    <string name="DiamondStarPattern2">
+           \t*\n
+        *\t \t*\n
+        *\t \t \t *\n
+        *\t \t \t \t*\n
+        *\t \t \t \t \t \t*\n
+        *\t \t \t \t*\n
+        *\t \t \t*\n
+        *\t \t*\n
+        \t*
+
+
+
+    </string>
+    <string name="DiamondStarPattern2Logic">
+      \nfor (int i=1; i(LessThan)= 5 ; i++)
+        \n{
+      \n  for (int j = 5; j (GreaterThan) i ; j—)
+       \n {
+         \n   Print(" ");
+        \n}
+       \n Print("*");
+       \n for (int k = 1; k (LessThan) 2*(i -1) ;k++)
+\n{
+\n Print(" Space");
+\n}
+ \nif( i==1)
+ \n{
+ \nPrint(NewLine);
+\n} else
+\n{
+\nPrint("*");
+\n}
+ \n}
+        \nfor (int i= 5-1; i(GreaterThan)= 1 ; i—)
+        \n{
+       \n for (int j = 5; j (GreaterThan) i ; j—)
+        \n{
+        \n    Print(" ");
+        \n}
+       \n Print("*");
+       \n for (int k = 1; k (LessThan) 2*(i -1) ;k++)
+        \n{
+       \n     Print(" ");
+        \n}
+        \nif( i==1)
+        \n    Print(NewLine);
+        \nelse
+         \n   Print("*");
+    \n}
+        \n
+        \n
+        \n
+    </string>
+    <string name="PatternTypes">There Are Generally 3 Patterns Types:\n
+    That Are Categorized Below\n
+    Lets Get Start :-)</string>
+    <string name="selectedPattern"> Selected Patern</string>
+    <string name="SimplenumericPattern">
+        1 
+\n1 2 
+\n1 2 3 
+\n1 2 3 4 
+\n1 2 3 4 5
+
+    </string>
+    <string name="SimplePatternLogic">
+       for(i=0; i(Lessthan)n; i++) // outer loop for rows
+        \n{
+         \n   num=1;
+         \n   for(j=0; j(Lessthan)=i; j++) // inner loop for rows
+          \n  {
+          \n      // printing num with a space
+          \n      Print(num);
+          \n      //incrementing value of num
+               \n num++;
+           \n }
+           \n // ending line after each row
+           \n Print(NewLine);
+        \n}
+
+    </string>
+    <string name="serialNumberPattern">1
+\n2 3
+\n4 5 6
+\n7 8 9 10
+\n11 12 13 14 15
+    </string>
+    <string name="serialNumberPatternLogic">
+        int i, j, k = 1;
+            \nfor (i = 1; i (Lessthan)= 5; i++)
+ \n{
+  \n              for (j = 1; j(Lessthan) i + 1; j++)
+ \n{
+  \n                  Print(k++);
+  \n              }
+   \n             Print(NewLine);
+   \n         }
+
+    </string>
+    <string name="PascalTriangleProgram">
+    \n                 1
+    \n       1   1
+    \n     1   2   1
+    \n   1   3   3   1
+        \n1   4   6   4   1
+
+    </string>
+    <string name="PascalTriangleProgramLogic">
+        for (int i = 0; i (Lessthan) 5; i++)
+        \n{
+        \n    int number = 1;
+        \n    Printf("%" + (5 - i) * 2 + "s", "");
+        \n    for (int j = 0; j (Lessthan)= i; j++)
+        \n{
+        \n        Printf("%4d", number);
+        \n        number = number * (i - j) / (j + 1);
+        \n    }
+         \n   Println();
+       \n }
+
+
+    </string>
+    <string name="NumericDiamondPatternProgram">
+           1
+ \n 2 1 2
+ \n3 2 1 2 3
+\n4 3 2 1 2 3 4
+ \n3 2 1 2 3
+  \n2 1 2
+   \n1
+
+    </string>
+    <string name="NumericDiamondPatternProgramLogic" tools:ignore="TypographyDashes">
+        for (int i = 1; i (Lessthan)= 4; i++)
+        \n{
+         \n   int n = 4;
+           \n for (int j = 1; j(Lessthan)= n - i; j++)
+        \n{
+        \nPrint(" ");
+        \n}
+        \nfor (int k = i; k (Greaterthan)= 1; k—)
+            \n{
+             \n   Print(k);
+            \n}
+            \nfor (int l = 2; l (Lessthan)= i; l++)
+        \n{
+        \nPrint(l);
+        \n}
+        \nPrintln();
+        \n}
+        \nfor (int i = 3; i (Greaterthan)= 1; i—)
+       \n {
+        \n    int n = 3;
+          \n  for (int j = 0; j(Lessthan)= n - i; j++)
+        \n{
+        \nPrint(" ");
+        \n}
+        \nfor (int k = i; k (Greaterthan)= 1; k--)
+            \n{
+              \n  Print(k);
+            \n}
+           \n for (int l = 2; l (Lessthan)= i; l++)
+            \n{
+            \n    Print(l);
+           \n }
+            \nPrintln();
+       \n }
+        \n
+        \n
+        \n
+        \n
+
+    </string>
+    <string name="HorizontalNumberPattern">
+        1 
+\n2 2 
+\n3 3 3 
+\n4 4 4 4 
+\n5 5 5 5 5
+
+
+    </string>
+    <string name="HorizontalNumberPatternLogic">
+        for (int i = 1; i (Lessthan)= 5; i++)
+       \n {
+          \n  for (int j = 1; j (Lessthan)= i; j++)
+            \n{
+              \n  Print(i+" ");
+            \n}
+            \nPrintln();
+        \n}
+      \n close();
+
+    </string>
+    <string name="DescendingorderPattern">
+        5 
+\n5 4 
+\n5 4 3 
+\n5 4 3 2 
+\n5 4 3 2 1
+
+    </string>
+    <string name="DescendingorderPatternLogic" tools:ignore="TypographyDashes">
+        for (int i = 5; i (Greaterthan)= 1; i—)
+\n{
+\nfor (int j = rows; j (Greaterthan)= i; j--)
+\n{
+\nPrint(j );
+\n}
+\nPrintln();
+\n}
+\nclose();
+\n}
+    </string>
+    <string name="RightTriangleNumericPattern">
+        1
+\n2 1
+\n3 2 1
+\n4 3 2 1
+\n5 4 3 2 1
+
+    </string>
+    <string name="RightTriangleNumericPatternLogic" tools:ignore="TypographyDashes">
+        for (int i = 1; i (Lessthan)= 5; i++)
+        \n{
+        \nfor (int j = i; j (Greaterthan)= 1; j--)
+   \n{
+    \n   Print(j );
+   \n}
+  \n Print(NewLine);
+\n}
+    </string>
+    <string name="BinaryNumberPattern">
+        10101
+\n01010
+\n10101
+\n01010
+\n10101
+    </string>
+    <string name="BinaryNumberPatternLogic">
+        for (int i = 1; i (Lessthan)= 5; i++)
+        \n{
+             \nint num;
+             \nif(i%2 == 0)
+             \n{
+                \n num = 0;
+                 \nfor (int j = 1; j (LessThan)= 5; j++)
+                 \n{
+                   \n  Print(num);
+                     \nnum = (num == 0)? 1 : 0;
+                 \n}
+             \n}
+            \n else
+             \n{
+                \n num = 1;
+                 \nfor (int j = 1; j (LessThan)= rows; j++)
+                 \n{
+                    \n Print(num);
+                     \nnum = (num == 0)? 1 : 0;
+                 \n}
+             \n}
+             \nPrint(NewLine);
+         \n}
+
+    </string>
+    <string name="ZerosonestrianglePatternPrograms">
+        1
+\n10
+\n101
+\n1010
+\n10101
+    </string>
+    <string name="ZerosonestrianglePatternProgramsLogic">
+        for (int i = 1; i (Lessthan)= 5; i++)
+       \n {
+        \n    for (int j = 1; j (Lessthan)= i; j++)
+          \n  {
+            \n    if(j%2 == 0)
+              \n  {
+                \n    Print(0);
+               \n }
+                \nelse
+                \n{
+                 \n   Print(1);
+               \n }
+           \n }
+           \n Print(NewLine);
+        \n}
+    </string>
+    <string name="DiamondNumericPattern">
+        1 2 3 4 5 
+ \n2 3 4 5 
+   \n3 4 5 
+    \n4 5 
+     \n5 
+   \n 4 5 
+   \n3 4 5 
+  \n2 3 4 5 
+ \n1 2 3 4 5
+    </string>
+    <string name="DiamondNumericPatternLogic" tools:ignore="TypographyDashes">
+        for (int i = 1; i (Lessthan)= 5; i++)
+        \n{
+          \n  for (int j = 1; j (Lessthan) i; j++)
+            \n{
+              \n  Print(" ");
+           \n }
+            \nfor (int k = i; k (Lessthan)= 5; k++)
+        \n{
+        \nPrint(k+" ");
+        \n}
+        \nPrintln();
+        \n}
+        \nfor (int i = n-1; i (Greaterthan)= 1; i--)
+       \n {
+          \n   for (int j = 1; j (Lessthan) i; j++)
+            \n{
+              \n  Print(" Space");
+           \n }
+           \n for (int k = i; k (Lessthan)= n; k++)
+            \n{
+             \n   Print(k+" ");
+           \n }
+            \nPrint(NewLine);
+        \n}
+    </string>
+    <string name="RightAlphabetictriangle">
+        A
+\nA B
+\nA B C
+\nA B C D
+\nA B C D E
+\nA B C D E F
+    </string>
+    <string name="RightAlphabetictriangleLogic">
+        int alphabet = 65;
+        \n        for (int i = 0; i (Lessthan)= 5; i++)
+        \n {
+           \n  for (int j = 0; j (Lessthan)= i; j++)
+            \n {
+            \n     Print((char) (alphabet + j) + " Space");
+            \n }
+            \n Print(NewLine);
+        \n }
+    </string>
+    <string name="HorizontalAlphabetCharacterPattern">
+        A 
+\nB B 
+\nC C C 
+\nD D D D 
+\nE E E E E 
+\nF F F F F F 
+
+    </string>
+    <string name="HorizontalAlphabetCharacterPatternLogic">
+        int alphabet = 65;
+       \n         for (int i = 0; i(Lessthan)= 5; i++)
+        \n{
+          \n  for (int j = 0; j (Lessthan)= i; j++)
+            \n{
+              \n  Print((char) alphabet + " ");
+           \n }
+           \n alphabet++;
+           \n Print(NewLine);
+       \n }
+    </string>
+    <string name="KShapeCharacterPattern">
+        A B C D E F 
+\nA B C D E 
+\nA B C D 
+\nA B C 
+\nA B 
+\nA 
+\nA 
+\nA B 
+\nA B C 
+\nA B C D 
+\nA B C D E 
+\nA B C D E F
+    </string>
+    <string name="KShapeCharacterPatternLogic">
+        for (int i = 5; i (GretateTthan)= 0; i—)
+\n{
+  \n int alphabet = 65;
+  \n for (int j = 0; j (Lessthan)= i; j++)
+  \n {
+   \n    Print((char) (alphabet + j) + "Space ");
+  \n }
+  \n Print(NewLine);
+\n}
+\nfor (int i = 0; i(Lessthan)= 5; i++)
+\n{
+  \n int alphabet = 65;
+  \n for (int j = 0; j (Lessthan)= i; j++)
+  \n {
+  \n     Print((char) (alphabet + j) + " Space");
+  \n }
+  \n Print(NewLine);
+\n}
+
+    </string>
+    <string name="TriangleCharacterPattern">
+             A 
+   \nA B 
+   \nA B C 
+  \nA B C D 
+ \nA B C D E 
+\nA B C D E F
+
+    </string>
+    <string name="TriangleCharacterPatternLogic" tools:ignore="TypographyDashes">
+        \nfor (int i = 0; i (Lessthan)= 5; i++)
+        \n{
+        \nint alphabet = 65;
+       \n for (int j = 5; j (GretateTthan) i; j--)
+        \n{
+        \n    Print(" ");
+       \n }
+       \n for (int k = 0; k (Lessthan)= i; k++)
+       \n {
+       \n     Print((char) (alphabet + k) + " ");
+       \n }
+        \nPrint(NewLine);
+    \n}
+
+    </string>
+    <string name="CharacterDiamondPattern">
+  A\n
+        B\t B
+        \nC\t \t \t C
+        \nD\t \t \t \t \t D
+        \nE \t \t \t \t \t \t E
+        \nF \t \t \t \t \t \t \t \t F
+        \nE \t \t \t \t \t  \t E
+        \nD \t \t \t \t \t D
+        \nC \t \t \tC
+        \nB\t B
+        \nA
+
+    </string>
+    <string name="CharacterDiamondPatternLogic" tools:ignore="StringEscaping,TypographyDashes">
+        \t \t \t \t { Using Java } \t \t \t \t\n
+        \nchar[ ] letter = { \A, B, C, D, E, F, G, H, I, J,
+            \nK, L, M, N, O, P, Q, R, S, T, U, V,
+            \nW, X, Y, Z };
+   \n int letter_number = 0;
+   \n String[] diamond = new String[26];
+        \n// array of strings
+  \n  Print("Enter a Character between A to Z : ");
+    \nScanner reader = new Scanner(System.in);
+   \n try {
+     \n   char user_letter = reader.next("[A-Z]").charAt(0);
+      \n  // search for letter number in the array letter
+       \n for (int i = 0; i (Lessthan) letter.length; i++)
+        \n{
+        \n    if (letter[i] == user_letter)
+        \n{
+        \n        letter_number = i;
+        \n        break;
+          \n  }
+      \n  }
+       \n // construct diamond
+       \n for (int i = 0; i (Lessthan)= letter_number; i++)
+        \n{
+       \n     diamond[i] = "";
+        \n    // add initial spaces
+        \n    for (int j = 0; j (Lessthan) letter_number - i; j++)
+        \n{
+        \n        diamond[i] += " ";
+        \n    }
+         \n   // add letter
+         \n   diamond[i] += letter[i];
+         \n   // add space between letters
+         \n   if (letter[i] != A)
+        \n{
+           \n     for (int j = 0; j (Lessthan) 2 * i - 1; j++)
+        \n{
+        \ndiamond[i] += " ";
+        \n}
+        \n// add letter
+        \ndiamond[i] += letter[i];
+        \n}
+        \n// Draw the first part of the diamond
+        \nPrint(NewLine)(diamond[i]);
+        \n}
+        \nfor (int i = letter_number - 1; i (GretateTthan)= 0; i--)
+				\n{
+            \n// Draw the second part of the diamond
+            \n// Writing the diamondArray in reverse order
+            \nPrint(NewLine)(diamond[i]);
+       \n }
+   \n } catch (Exception e) {
+     \n   e.printStackTrace();
+   \n }
+        \nfinally
+        \n{
+       \n reader.close();
+   \n }
+        \n
+        \n
+        \n
+        \n
+        \n
+        \n
+        \n
+
+
+    </string>
+
+
+</resources>
